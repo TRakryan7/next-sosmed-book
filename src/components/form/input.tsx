@@ -60,7 +60,7 @@ const Input: React.FC<InputProps> = ({
                 border-base
                 rounded-md
                 outline-none
-                text-based
+                text-black
                 focus:border-primary
                 transition
                 disabled:opacity-70
