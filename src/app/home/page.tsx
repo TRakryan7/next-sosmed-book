@@ -3,20 +3,18 @@ import { UserDataContext } from "@/components/contextAuth/userContext";
 import { AuthProvider } from "@/components/contextAuth/AuthContext";
 import Header from "@/components/header/Header";
 import Story from "@/components/story/Story";
-import Navabar from "@/components/navbar/Navbar";
+import CardContent from "@/components/CardContent/CardContent";
 const Home = () => {
 
     
 
     // console.log(userData)
     return (
-        <div className=" ">
+        <>
                 <Story />
-                <section>
-                    Hello World
-                </section>
-                <Navabar />
-        </div>
+                <CardContent/>
+                <CardContent/>
+        </>
      );
 }
  

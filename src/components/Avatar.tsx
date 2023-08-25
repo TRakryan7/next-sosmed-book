@@ -2,17 +2,24 @@ import Image from "next/image";
 import React from "react";
 
 interface AvatarProps {
-    images?:string
+    images?: string
+    small?:boolean
 }
 
 
 const Avatar: React.FC<AvatarProps> = ({
-    images
+    images,
+    small
 }) => {
     return ( 
         <div>
-            <div className="relative w-[4.05rem] h-[4.05rem] rounded-full overflow-hidden">
-                <Image alt='story' className="" fill src={images || '/asset/images/placeholder.png'} />
+            <div className={`relative
+                            ${small ? 'w-12':'w-[4.05rem]'}
+                            ${small ? 'h-12':'h-[4.05rem]'}
+                            rounded-full
+                            overflow-hidden
+                            object-cover`}>
+                <Image alt='story' className="object-cover" fill src={images || '/asset/images/placeholder.png'} />
             </div>
         </div>
      );

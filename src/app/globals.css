@@ -6,6 +6,13 @@
   @apply h-full bg-[#fbfbfb]
 }
 
+/* html {
+  scroll-behavior: smooth;
+} */
+
 body {
   @apply h-full bg-[#fbfbfb]
+}
+.active{
+  @apply bg-primary p-1 rounded-full text-white
 }

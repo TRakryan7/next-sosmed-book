@@ -50,9 +50,9 @@ export const AuthProvider: React.FC<AuthProviderProp> = ({children}) => {
 
             {show && (
 
-                <div>
+                <>
                     {children}
-                </div>
+                </>
             )}
         </AuthContext.Provider>
     )

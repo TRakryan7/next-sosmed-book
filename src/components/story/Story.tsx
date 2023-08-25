@@ -21,8 +21,8 @@ function Story() {
     
 
     return ( 
-        <div className="border-b-[1px] border-solid p-4 h-40">
-            <div ref={ref} className="w-full h-32  py-4 keen-slider">
+        <section className="border-b-[1px] w-full border-solid h-36">
+            <div ref={ref} className=" w-full h-32  py-2 keen-slider">
                 <div className="keen-slider__slide px-4 mt-6 w-[4rem] flex flex-col">
                     <div className="mx-auto">
                         <Avatar />
@@ -43,7 +43,7 @@ function Story() {
                 }
 
             </div>
-      </div>      
+      </section>      
      );
 }
  

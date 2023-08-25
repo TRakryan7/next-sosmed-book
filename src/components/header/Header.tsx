@@ -4,8 +4,8 @@ import { BsChatLeftText } from 'react-icons/bs'
 
 const Header = () => {
     return ( 
-        <header className='bg-[#fbfbfb] pt-6 h-20 left-0 top-0 z-[9999] w-full sticky'>
-            <div className=" p-8 pr-12">
+        <header className='bg-[#fbfbfb] pt-5 h-24 top-0 z-[9999] w-full sticky'>
+            <div className=" p-8  pr-12">
                 <div className="flex justify-between items-center">
                     <h2 className="text-xl font-bold text-black">ParagrafIn</h2>
                     <div className='flex justify-around items-center'>
