@@ -1,19 +1,25 @@
-'use client'
 import { UserDataContext } from "@/components/contextAuth/userContext"; 
 import { AuthProvider } from "@/components/contextAuth/AuthContext";
 import Header from "@/components/header/Header";
 import Story from "@/components/story/Story";
 import CardContent from "@/components/CardContent/CardContent";
+import { dataContain } from "@/testingData";
+
 const Home = () => {
 
-    
+    const data = dataContain
 
-    // console.log(userData)
+    //  console.log(data)
     return (
         <>
-                <Story />
-                <CardContent/>
-                <CardContent/>
+            <Story />
+            {dataContain.map((item: any, index: number) => {
+                return (
+                <div key={index}>
+                        <CardContent data={ item } />
+                </div>   
+                )
+            })}
         </>
      );
 }

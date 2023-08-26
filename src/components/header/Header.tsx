@@ -1,10 +1,14 @@
 import { HiOutlineBell } from 'react-icons/hi'
 import { BsChatLeftText } from 'react-icons/bs'
-
+import { usePathname } from 'next/navigation';
 
 const Header = () => {
+
+    const pathname = usePathname()
+
     return ( 
-        <header className='bg-[#fbfbfb] pt-5 h-24 top-0 z-[9999] w-full sticky'>
+        <header className='bg-[#fbfbfb] pt-5 h-24 top-0 z-[9999] w-full fixed'>
+            {pathname == "/home" ? 
             <div className=" p-8  pr-12">
                 <div className="flex justify-between items-center">
                     <h2 className="text-xl font-bold text-black">ParagrafIn</h2>
@@ -18,7 +22,16 @@ const Header = () => {
                         </div>
                     </div>
                 </div>
-            </div>    
+            </div>  
+            :''}
+            {pathname == "/search" ? 
+            <div className=" py-2 ">
+                <div className="flex justify-center items-center">
+                    <h2 className="text-xl font-bold text-black">Jelajah</h2>
+                </div>
+            </div>  
+            :''}
+  
         </header>
      );
 }

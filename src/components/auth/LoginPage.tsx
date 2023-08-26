@@ -56,7 +56,7 @@ const LoginPage: React.FC<LoginPageProps> = ({
 
     return (
         <div className="w-72">
-            <div className="mt-32 text-center">
+            <div className="mt-16 text-center">
                 <h2 className="text-5xl font-bold text-primary italic">ParagafIn</h2>
                 <p className="text-black text-xs font-semibold ml-32">write it, read it, share it!</p>
             </div>

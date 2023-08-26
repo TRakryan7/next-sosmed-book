@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root{
-  @apply h-full bg-[#fbfbfb]
+  @apply  bg-[#fbfbfb]
 }
 
 /* html {
@@ -11,8 +11,8 @@
 } */
 
 body {
-  @apply h-full bg-[#fbfbfb]
+  @apply  bg-[#fbfbfb]
 }
-.active{
+.active-router{
   @apply bg-primary p-1 rounded-full text-white
 }
