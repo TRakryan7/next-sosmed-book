@@ -11,7 +11,7 @@ const Navabar = () => {
     const pathname = usePathname()
 
     return ( 
-        <footer className="fixed bg-[#fbfbfb] px-2 w-full h-20 block bottom-0 opacity-100">
+        <footer className="fixed bg-[#fbfbfb] px-2 w-full h-20 block z-[9999] bottom-0 opacity-100">
             <div className='absolute w-[95%] bg-white mx-auto rounded-3xl py-2 px-1 shadow-lg opacity-100'>
                 <ul className="flex flex-row justify-around items-center text-black">
                     <li className={pathname == "/home" ? "active-router" : ""}>
