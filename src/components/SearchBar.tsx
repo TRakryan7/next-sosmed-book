@@ -46,7 +46,7 @@ const SearchBar: React.FC<SearchBarProps> = ({
       }, [])
 
     return ( 
-        <section ref={onClick} className="flex flex-col w-full  justify-center items-center px-5 sticky z-40">
+        <section ref={onClick} className="flex flex-col w-full  justify-center items-center pb-2 bg-white px-5 top-24 sticky z-40 ">
             <div  className="flex flex-row w-full">
                 <div className={`w-full flex flex-row items-center
                                 px-3
@@ -62,7 +62,8 @@ const SearchBar: React.FC<SearchBarProps> = ({
                         <FiSearch className={`h-5 w-5  ${focus ? 'text-primary':'text-gray-300' }`} />
                     </div>
                     <input
-                        onFocus={()=>{setFocus(true)}}
+                        onFocus={() => { setFocus(true) }}
+                        placeholder='Cari'
                         className="
                                 w-full
                                 p-[0.5rem]
@@ -73,9 +74,9 @@ const SearchBar: React.FC<SearchBarProps> = ({
                     </input>
                 </div>
             </div>
-            <div className={` h-[38rem] bg-white absolute top-11 flex flex-col items-center transform duration-300 opacity-0 ${ focus ? 'visible opacity-100':'invisible'}`}>
+            <div className={` h-[39.5rem] w-full bg-white absolute top-10 flex flex-col items-center transform duration-300 opacity-0 ${ focus ? 'visible opacity-100':'invisible'}`}>
                 <div className="">
-                    <nav className="flex w-full justify-around" aria-label="Tabs" role="tablist">
+                    <nav className="flex w-full justify-around mt-4" aria-label="Tabs" role="tablist">
                         <button type="button" className="font-semibold hs-tab-active:text-primary hs-tab-active:border-primary w-16 py-1 text-center  items-center gap-2  border-b-[1px] boder-gray-400 text-sm whitespace-nowrap text-black border-solid  active" id="basic-tabs-item-1" data-hs-tab="#basic-tabs-1" aria-controls="basic-tabs-1" role="tab">
                             Populer
                         </button>
@@ -94,7 +95,7 @@ const SearchBar: React.FC<SearchBarProps> = ({
                     </nav>
                 </div>
 
-                <div className="pt-4 h-full w-full bg-white">
+                <div className="pt-4 px-4 h-full w-full bg-white">
                     <div id="basic-tabs-1" className='' role="tabpanel" aria-labelledby="basic-tabs-item-1">
                         <CardProfile/>
                         <CardProfile/>

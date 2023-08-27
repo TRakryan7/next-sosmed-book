@@ -138,88 +138,109 @@ export const dataContain: dataContainProps[] = [
 interface datCategoryProps{
     title: string;
     image: string;
+    type: number;
 }
 
 export const dataCategory: datCategoryProps[] = [
     {
         'title': 'Makanan',
-        'image': '/asset/category/foods.jpg'
+        'image': '/asset/category/foods.jpg',
+        'type':1
     },
     {
         'title': 'Minuman',
-        'image': '/asset/category/drink.jpg'
+        'image': '/asset/category/drink.jpg',
+        'type':0
     },
     {
         'title': 'Melancong',
-        'image': '/asset/category/traveling.jpg'
+        'image': '/asset/category/traveling.jpg',
+        'type':0
     },
     {
         'title': 'Zen',
-        'image': '/asset/category/zen.jpg'
+        'image': '/asset/category/zen.jpg',
+        'type':1
     },
     {
         'title': 'Budaya',
-        'image': '/asset/category/culture.jpg'
+        'image': '/asset/category/culture.jpg',
+        'type':1
     },
     {
         'title': 'Kehidupan',
-        'image': '/asset/category/lifestyle.jpg'
+        'image': '/asset/category/lifestyle.jpg',
+        'type':0
     },
     {
         'title': 'Alam',
-        'image': '/asset/category/mountain.jpg'
+        'image': '/asset/category/mountain.jpg',
+        'type':0
     },
     {
         'title': 'Hewan',
-        'image': '/asset/category/animal.jpg'
+        'image': '/asset/category/animal.jpg',
+        'type':1
     },
     {
         'title': 'Bahasa',
-        'image': '/asset/category/language.jpg'
+        'image': '/asset/category/language.jpg',
+        'type':1
     },
     {
         'title': 'Keseimbangan',
-        'image': '/asset/category/balance.jpg'
+        'image': '/asset/category/balance.jpg',
+        'type':0
     },
     {
         'title': 'Lelucon',
-        'image': '/asset/category/humor.jpg'
+        'image': '/asset/category/humor.jpg',
+        'type':0
     },
     {
         'title': 'Programming',
-        'image': '/asset/category/programming.jpg'
+        'image': '/asset/category/programming.jpg',
+        'type':1
     },
     {
         'title': 'Agama',
-        'image': '/asset/category/religion.jpg'
+        'image': '/asset/category/religion.jpg',
+        'type':1
     },
     {
         'title': 'Cinta',
-        'image': '/asset/category/romace.jpg'
+        'image': '/asset/category/romace.jpg',
+        'type':0
     },
     {
         'title': 'Anime',
-        'image': '/asset/category/anime.jpg'
+        'image': '/asset/category/anime.jpg',
+        'type':0
     },
     {
         'title': 'Kartun',
-        'image': '/asset/category/cartoon.jpg'
+        'image': '/asset/category/cartoon.jpg',
+        'type':1
     },
     {
         'title': 'Thailand',
-        'image': '/asset/category/thailand.jpg'
+        'image': '/asset/category/thailand.jpg',
+        'type':1
     },
     {
         'title': 'Bali',
-        'image': '/asset/category/bali.jpg'
+        'image': '/asset/category/bali.jpg',
+        'type':0
     },
     {
         'title': 'Jepang',
-        'image': '/asset/category/japan.jpg'
+        'image': '/asset/category/japan.jpg',
+        'type':0
     },
     {
         'title': 'Kemanusiaan',
-        'image': '/asset/category/philanthropy.jpg'
+        'image': '/asset/category/philanthropy.jpg',
+        'type':1
     },
     
 ]

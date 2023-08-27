@@ -1,17 +1,19 @@
 import SearchBar from "@/components/SearchBar";
 import CardCategory from "@/components/CardCategory";
 import { dataCategory } from "@/testingData";
+import CardCategoryFirst from "@/components/CardCategoryFirst";
 const Search = () => {
     return ( 
         <>
-            <SearchBar/>
+            <SearchBar />
+            
             <div className="mt-4 mx-4">
-                <div className="flex flex-wrap gap-2 justify-center ">
+                <div className="flex flex-wrap gap-4 justify-center ">
                     {
-                        dataCategory.map((item:any,index:number) => {
+                        dataCategory.map((item: any, index: number) => {
                             return (
                                 <div key={index}>
-                                    <CardCategory data={item}/>
+                                    <CardCategory index={index} data={item}/>
                                 </div>
                             )
                         })
