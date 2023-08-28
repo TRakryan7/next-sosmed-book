@@ -1,4 +1,4 @@
-interface ButtonProps {
+interface ButtonProfileProps {
     label: string;
     secondary?:boolean;
     fullWidth?:boolean;
@@ -9,7 +9,7 @@ interface ButtonProps {
     outline?: boolean;
 }
 
-const Button: React.FC<ButtonProps> = ({
+const ButtonProfile: React.FC<ButtonProfileProps> = ({
     label,
     secondary,
     fullWidth,
@@ -30,16 +30,16 @@ const Button: React.FC<ButtonProps> = ({
                 transition
                 border-2
                 border-primary
+                rounded-2xl
                 ${fullWidth ? 'w-full':'w-fit'}
                 ${secondary ? 'bg-white' : 'bg-primary'}
                 ${secondary ? 'text-primary' : 'text-white'}
                 ${large ? 'text-xl' : 'text-md'}
-                ${large ? 'px-5' : 'px-4'}
-                ${large ? 'py-3' : 'py-2'}
-                ${smaller ? 'px-2' : 'px-4'}
-                ${smaller ? 'py-1' : 'py-2'}
+                ${large ? 'px-5' : ''}
+                ${large ? 'py-3' : ''}
+                ${smaller ? 'px-2' : ''}
+                ${smaller ? 'py-1' : ''}
                 ${smaller ? 'text-sm' : 'text-md'}
-                ${smaller ? 'rounded-md' : 'rounded-2xl'}
                 ${outline ? 'bg-transparent' : ''}
                 ${outline ? 'border-white' : ''}
                 ${outline ? 'text-white' : ''}
@@ -50,4 +50,4 @@ const Button: React.FC<ButtonProps> = ({
     )
 }
 
-export default Button
+export default ButtonProfile

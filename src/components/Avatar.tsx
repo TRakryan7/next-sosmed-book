@@ -3,19 +3,27 @@ import React from "react";
 
 interface AvatarProps {
     images?: string
-    small?:boolean
+    normal?: boolean
+    small?: boolean
+    large?:boolean
 }
 
 
 const Avatar: React.FC<AvatarProps> = ({
     images,
-    small
+    small,
+    large,
+    normal
 }) => {
     return ( 
         <div>
             <div className={`relative
-                            ${small ? 'w-12':'w-[4.05rem]'}
-                            ${small ? 'h-12':'h-[4.05rem]'}
+                            ${normal ? 'w-[4.05rem]' : ''}
+                            ${normal ? 'h-[4.05rem]':''}
+                            ${small ? 'w-12':''}
+                            ${small ? 'h-12':''}
+                            ${large ? 'w-24':''}
+                            ${large ? 'h-24':''}
                             rounded-full
                             overflow-hidden
                             object-cover`}>

@@ -3,7 +3,7 @@ import { AuthProvider } from "@/components/contextAuth/AuthContext";
 import React, { ReactNode } from "react";
 import Header from "@/components/header/Header";
 import Navabar from "@/components/navbar/Navbar";
-export default function LayoutHome  ({
+export default function LayoutProfile  ({
     children,
 }: {
    children:React.ReactNode
@@ -18,5 +18,3 @@ export default function LayoutHome  ({
         </AuthProvider>
      );
 }
- 
-// export default LayoutHome;

@@ -26,7 +26,7 @@ function Story() {
             <div ref={ref} className=" w-full h-32  py-2 keen-slider">
                 <div className="keen-slider__slide px-4 mt-6 w-[4rem] flex flex-col">
                     <div className="mx-auto">
-                        <Avatar />
+                        <Avatar normal/>
                     </div>    
                     <p className="text-xs text-black font-semibold mx-auto mt-1">My Story</p>
                 </div>
@@ -35,7 +35,7 @@ function Story() {
                         return (
                             <div key={index} className="keen-slider__slide  mt-6 w-[4rem] flex flex-col">
                                 <div className="mx-auto">
-                                    <Avatar images={item.image} />
+                                    <Avatar normal images={item.image} />
                                 </div>    
                                 <p className="text-xs text-black font-semibold mx-auto mt-1">{ item.name }</p>
                             </div>

@@ -1,5 +1,8 @@
 import { HiOutlineBell } from 'react-icons/hi'
 import { BsChatLeftText } from 'react-icons/bs'
+import { IoIosArrowBack } from 'react-icons/io'
+import { BsThreeDots } from 'react-icons/bs'
+import { MdVerified } from 'react-icons/md'
 import { usePathname } from 'next/navigation';
 
 const Header = () => {
@@ -28,6 +31,20 @@ const Header = () => {
             <div className=" py-2 ">
                 <div className="flex justify-center items-center">
                     <h2 className="text-xl font-bold text-black">Jelajah</h2>
+                </div>
+            </div>  
+            :''}
+            {pathname == "/profile" ? 
+            <div className=" py-8 px-3">
+                < div className="flex justify-between items-center px-7">
+                    <IoIosArrowBack className='w-5 h-5'/>        
+                    <div className='flex items-center'>
+                        <h2 className="text-lg font-bold text-black">tm_skristanto</h2>
+                        <div className='text-blue-500 ml-1'>
+                            <MdVerified/>
+                        </div>    
+                    </div>
+                    <BsThreeDots className='w-5 h-5'/>    
                 </div>
             </div>  
             :''}

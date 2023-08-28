@@ -11,7 +11,7 @@ export default function LayoutSearch  ({
     return ( 
         <AuthProvider>
             <Header />
-            <main className="flex min-h-screen flex-col items-center  py-24 px-2">
+            <main className="flex min-h-screen flex-col items-center  py-24">
                 {children}
             </main>
             <Navabar />

@@ -15,7 +15,7 @@ const Home = () => {
             <Story />
             {dataContain.map((item: any, index: number) => {
                 return (
-                <div key={index}>
+                <div key={index} className="px-2">
                         <CardContent data={ item } />
                 </div>   
                 )

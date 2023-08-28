@@ -244,3 +244,118 @@ export const dataCategory: datCategoryProps[] = [
     },
     
 ]
+
+
+interface dataPhotoPostingProps{
+    id: number;
+    title: string;
+    type: string;
+    post: string;
+    slug: string;
+    description: string;
+    likes: number;
+    comment: number;
+}
+
+export const dataPhotoPosting: dataPhotoPostingProps[] = [
+    {
+        'id': 1,
+        'title': 'Testing',
+        'type': 'photo',
+        'slug': '#',
+        'post': '/asset/contain/coffee.jpg',
+        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non aspernatur esse sint impedit necessitatibus quo eligendi aliquid officia, magnam mollitia at sapiente vero? Pariatur, fugit.',
+        'likes': 25,
+        'comment':34
+    },
+    {
+        'id': 1,
+        'title': 'Testing',
+        'type': 'photo',
+        'slug': '#',
+        'post': '/asset/contain/computer.jpg',
+        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non aspernatur esse sint impedit necessitatibus quo eligendi aliquid officia, magnam mollitia at sapiente vero? Pariatur, fugit.',
+        'likes': 25,
+        'comment':34
+    },
+    {
+        'id': 1,
+        'title': 'Testing',
+        'type': 'photo',
+        'slug': '#',
+        'post': '/asset/contain/beach.jpg',
+        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non aspernatur esse sint impedit necessitatibus quo eligendi aliquid officia, magnam mollitia at sapiente vero? Pariatur, fugit.',
+        'likes': 25,
+        'comment':34
+    },
+    {
+        'id': 1,
+        'title': 'Testing',
+        'type': 'photo',
+        'slug': '#',
+        'post': '/asset/contain/books.jpg',
+        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non aspernatur esse sint impedit necessitatibus quo eligendi aliquid officia, magnam mollitia at sapiente vero? Pariatur, fugit.',
+        'likes': 25,
+        'comment':34
+    },
+    {
+        'id': 1,
+        'title': 'Testing',
+        'type': 'photo',
+        'slug': '#',
+        'post': '/asset/contain/code.jpg',
+        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non aspernatur esse sint impedit necessitatibus quo eligendi aliquid officia, magnam mollitia at sapiente vero? Pariatur, fugit.',
+        'likes': 25,
+        'comment':34
+    },
+    {
+        'id': 1,
+        'title': 'Testing',
+        'type': 'photo',
+        'slug': '#',
+        'post': '/asset/contain/mountain.jpg',
+        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non aspernatur esse sint impedit necessitatibus quo eligendi aliquid officia, magnam mollitia at sapiente vero? Pariatur, fugit.',
+        'likes': 25,
+        'comment':34
+    },
+    {
+        'id': 1,
+        'title': 'Testing',
+        'type': 'photo',
+        'slug': '#',
+        'post': '/asset/contain/galaxy.jpg',
+        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non aspernatur esse sint impedit necessitatibus quo eligendi aliquid officia, magnam mollitia at sapiente vero? Pariatur, fugit.',
+        'likes': 25,
+        'comment':34
+    },
+    {
+        'id': 1,
+        'title': 'Testing',
+        'type': 'photo',
+        'slug': '#',
+        'post': '/asset/contain/flower.jpg',
+        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non aspernatur esse sint impedit necessitatibus quo eligendi aliquid officia, magnam mollitia at sapiente vero? Pariatur, fugit.',
+        'likes': 25,
+        'comment':34
+    },
+    {
+        'id': 1,
+        'title': 'Testing',
+        'type': 'photo',
+        'slug': '#',
+        'post': '/asset/contain/halloween.jpg',
+        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non aspernatur esse sint impedit necessitatibus quo eligendi aliquid officia, magnam mollitia at sapiente vero? Pariatur, fugit.',
+        'likes': 25,
+        'comment':34
+    },
+    {
+        'id': 1,
+        'title': 'Testing',
+        'type': 'photo',
+        'slug': '#',
+        'post': '/asset/contain/modern.jpg',
+        'description': 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Non aspernatur esse sint impedit necessitatibus quo eligendi aliquid officia, magnam mollitia at sapiente vero? Pariatur, fugit.',
+        'likes': 25,
+        'comment':34
+    },
+]
