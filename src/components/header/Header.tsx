@@ -3,12 +3,17 @@ import { BsChatLeftText } from 'react-icons/bs'
 import { IoIosArrowBack } from 'react-icons/io'
 import { BsThreeDots } from 'react-icons/bs'
 import { MdVerified } from 'react-icons/md'
-import { usePathname } from 'next/navigation';
+import { usePathname,useRouter } from 'next/navigation';
 
 const Header = () => {
 
     const pathname = usePathname()
+    const router = useRouter()
 
+    const goBack = () => {
+        router.back()
+    }
+ 
     return ( 
         <header className='bg-[#fbfbfb] pt-5 h-24 top-0 z-[9999] w-full fixed'>
             {pathname == "/home" ? 
@@ -37,12 +42,27 @@ const Header = () => {
             {pathname == "/profile" ? 
             <div className=" py-8 px-3">
                 < div className="flex justify-between items-center px-7">
-                    <IoIosArrowBack className='w-5 h-5'/>        
+                    <div className='cursor-pointer' onClick={goBack}>    
+                        <IoIosArrowBack className='w-5 h-5' />
+                    </div>        
                     <div className='flex items-center'>
                         <h2 className="text-lg font-bold text-black">tm_skristanto</h2>
                         <div className='text-blue-500 ml-1'>
                             <MdVerified/>
                         </div>    
+                    </div>
+                    <BsThreeDots className='w-5 h-5'/>    
+                </div>
+            </div>  
+            :''}
+            {pathname == "/book" ? 
+            <div className=" py-4 px-3">
+                < div className="flex justify-between items-center px-7">
+                    <div className='cursor-pointer' onClick={goBack}>    
+                        <IoIosArrowBack className='w-5 h-5' />
+                    </div>        
+                    <div className='flex items-center'>
+                        <h2 className="text-lg font-bold text-black">Novel</h2>   
                     </div>
                     <BsThreeDots className='w-5 h-5'/>    
                 </div>
