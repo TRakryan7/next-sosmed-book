@@ -37,7 +37,7 @@ export const UserProvider: React.FC<React.ReactNode> = ({ children }) => {
 
         
         if (DataUser) {
-            console.log('context', DataUser)
+            // console.log('context', DataUser)
             setUserData(DataUser)
         }
     }

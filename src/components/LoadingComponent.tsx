@@ -1,6 +1,6 @@
 export const Loadingcomponent = () => {
     return (
-        <div className="flex min-h-screen flex-col justify-center items-center">
+        <div className="flex h-full mt-72 flex-col justify-center items-center">
             <div className="loading-screen">
                 <div className="dot"></div>
                 <div className="dot"></div>

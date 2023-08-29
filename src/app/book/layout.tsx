@@ -3,6 +3,7 @@ import { AuthProvider } from "@/components/contextAuth/AuthContext";
 import React, { ReactNode } from "react";
 import Header from "@/components/header/Header";
 import Navabar from "@/components/navbar/Navbar";
+
 export default function LayoutBook  ({
     children,
 }: {
